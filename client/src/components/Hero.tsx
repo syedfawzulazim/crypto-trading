@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="bg-[#1f222c] px-4 pb-4 max-w-full mx-auto 2xl:w-7/12">
+    <div className="bg-[#1f222c] px-4 pb-4 w-full mx-auto xl:max-w-[1400px]">
       <div>
         <h1 className="pt-2 pb-1 text-sm font-semibold">
           Today's Cryptocurrency Prices by Market Cap

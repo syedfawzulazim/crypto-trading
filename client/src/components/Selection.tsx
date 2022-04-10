@@ -8,7 +8,7 @@ import { BiCustomize, BiBarcodeReader } from "react-icons/bi";
 
 const Selection = () => {
   return (
-    <div className="bg-[#1f222c] px-4">
+    <div className="bg-[#1f222c] px-4 w-full mx-auto xl:max-w-[1400px]">
       <div className="flex justify-between overflow-x-auto overflow-y-hidden no-scrollbar whitespace-nowrap">
         <div className="space-x-2">
           <a href="" className="bg-[#323546] px-2 py-[5px] rounded-md text-xs">

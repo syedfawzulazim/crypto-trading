@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { Hero, Navbar, Selection } from "../components";
+import { Hero, Navbar, Selection, Subscribe, Table } from "../components";
 
 const Home: NextPage = () => {
   return (
@@ -9,6 +9,8 @@ const Home: NextPage = () => {
       <div className="bg-gradient-to-b from-[#222531] to-[#000000] ">
         <Hero />
         <Selection />
+        <Table />
+        <Subscribe />
       </div>
 
       <div className="text-2xl bg-slate-600 ">Hello World</div>

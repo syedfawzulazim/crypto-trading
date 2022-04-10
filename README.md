@@ -1,1 +1,3 @@
 # crypto-trading
+[Work in Progress...!!!]
+NextJs, NodeJs(Express), Typescript, MongoDB, Mongoose, RESTapi, Tailwind etc... 

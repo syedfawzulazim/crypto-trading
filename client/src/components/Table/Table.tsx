@@ -5,22 +5,22 @@ const Table = () => {
   return (
     <div className="xl:max-w-[1400px] mx-auto  pr-4 lg:pr-0 ">
       <div className="w-full overflow-x-auto overflow-y-hidden no-scrollbar whitespace-nowrap lg:pr-0">
-        <table className="table-auto w-full ">
+        <table className="w-full table-auto ">
           <thead className="">
-            <tr className="border-b border-slate-800 text-xs">
+            <tr className="text-xs border-b border-slate-800">
               <th className="sticky left-0 bg-black ">Name</th>
-              <th className="pl-6 py-2 text-right ">Price</th>
-              <th className="pl-6 py-2 text-right">24h %</th>
-              <th className="pl-6 py-2 text-right">7d %</th>
-              <th className="pl-6 py-2 text-right">Market Cap</th>
-              <th className="pl-6 py-2 text-right">Volume(24h)</th>
-              <th className="pl-6 py-2 text-right">Circulating Supply</th>
+              <th className="py-2 pl-6 text-right ">Price</th>
+              <th className="py-2 pl-6 text-right">24h %</th>
+              <th className="py-2 pl-6 text-right">7d %</th>
+              <th className="py-2 pl-6 text-right">Market Cap</th>
+              <th className="py-2 pl-6 text-right">Volume(24h)</th>
+              <th className="py-2 pl-6 text-right">Circulating Supply</th>
               <th className="px-6 py-2 text-right">Last 7 Days</th>
             </tr>
           </thead>
-          <tbody className=" font-semibold">
+          <tbody className="font-semibold ">
             <tr className="border-b border-slate-800">
-              <td className="sticky left-0 bg-black px-8 py-1">
+              <td className="sticky left-0 px-8 py-1 bg-black">
                 <div className="flex items-center">
                   <span>
                     <AiOutlineStar />
@@ -30,7 +30,7 @@ const Table = () => {
                       <BsCurrencyBitcoin />
                       <div className="px-2">
                         <p>Bitcoin</p>
-                        <div className="ml-2 flex space-x-2 text-xs">
+                        <div className="flex ml-2 space-x-2 text-xs">
                           <p>1</p>
                           <p>BTC</p>
                         </div>
@@ -48,7 +48,7 @@ const Table = () => {
               <td className="px-6 text-right">7 days Graph</td>
             </tr>
             <tr className="border-b border-slate-800">
-              <td className="sticky left-0 bg-black px-8 py-1">
+              <td className="sticky left-0 px-8 py-1 bg-black">
                 <div className="flex items-center">
                   <span>
                     <AiOutlineStar />
@@ -58,7 +58,7 @@ const Table = () => {
                       <BsCurrencyBitcoin />
                       <div className="px-2">
                         <p>Bitcoin</p>
-                        <div className="ml-2 flex space-x-2 text-xs">
+                        <div className="flex ml-2 space-x-2 text-xs">
                           <p>1</p>
                           <p>BTC</p>
                         </div>
@@ -76,7 +76,7 @@ const Table = () => {
               <td className="px-6 text-right">7 days Graph</td>
             </tr>
             <tr className="border-b border-slate-800">
-              <td className="sticky left-0 bg-black px-8 py-1">
+              <td className="sticky left-0 px-8 py-1 bg-black">
                 <div className="flex items-center">
                   <span>
                     <AiOutlineStar />
@@ -86,7 +86,7 @@ const Table = () => {
                       <BsCurrencyBitcoin />
                       <div className="px-2">
                         <p>Bitcoin</p>
-                        <div className="ml-2 flex space-x-2 text-xs">
+                        <div className="flex ml-2 space-x-2 text-xs">
                           <p>1</p>
                           <p>BTC</p>
                         </div>
@@ -106,10 +106,10 @@ const Table = () => {
           </tbody>
         </table>
       </div>
-      <div className="flex items-center  justify-center">
+      <div className="flex items-center justify-center">
         <a
           href="#"
-          className="flex flex-initial items-center px-4 py-2 text-gray-500  rounded-md"
+          className="flex items-center flex-initial px-4 py-2 text-gray-500 rounded-md"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -119,9 +119,9 @@ const Table = () => {
             stroke="currentColor"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               d="M11 17l-5-5m0 0l5-5m-5 5h12"
             />
           </svg>
@@ -157,9 +157,9 @@ const Table = () => {
             stroke="currentColor"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               d="M13 7l5 5m0 0l-5 5m5-5H6"
             />
           </svg>

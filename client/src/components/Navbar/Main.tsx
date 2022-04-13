@@ -11,6 +11,7 @@ const Main = () => {
           </Link>
         </div>
         <div className="flex items-center">
+          <button>M</button>
           <div className="mr-3">
             <AiOutlineSearch />
           </div>

@@ -1,9 +1,11 @@
 const Category = () => {
   return (
-    <div className="relative flex py-2 space-x-4 overflow-x-auto overflow-y-hidden text-sm no-scrollbar whitespace-nowrap">
+    <div className="relative flex  items-center py-2 space-x-4 overflow-x-auto overflow-y-hidden text-sm no-scrollbar whitespace-nowrap text-slate-700 dark:text-white">
       <div>
         <a href="/">
-          <button>Cryptocurrencies</button>
+          <button className="p-1 text-blue-600 rounded-md dark:text-white bg-slate-200 dark:bg-slate-700">
+            Cryptocurrencies
+          </button>
         </a>
       </div>
       <div>

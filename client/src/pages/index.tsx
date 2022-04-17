@@ -1,17 +1,10 @@
 import type { NextPage } from "next";
-import {
-  Footer,
-  Hero,
-  Navbar,
-  Selection,
-  Subscribe,
-  Table,
-} from "../components";
+import { Hero, Selection, Subscribe, Table } from "../components";
 
 const Home: NextPage = () => {
   return (
-    <div className="text-white bg-[#17171a] ">
-      <div className="bg-gradient-to-b from-[#222531] to-[#000000] ">
+    <div className="text-white ">
+      <div className="bg-gradient-to-b dark:from-[#222531] dark:to-[#000000] from-[#7190bd] to-[#f8fafd">
         <Hero />
         <Selection />
         <Table />

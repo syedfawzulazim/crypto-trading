@@ -5,7 +5,7 @@ const Main = () => {
         <h2 className="text-xl font-light">Be the first to know about</h2>
         <div className="text-xl font-bold">crypto news every day</div>
       </div>
-      <p className="py-4 text-xs text-[#58667e]">
+      <p className="py-4 text-xs dark:text-[#58667e] text-black">
         Get crypto analysis, news and updates right to your inbox! Sign up here
         so you don't miss a single newsletter.
       </p>

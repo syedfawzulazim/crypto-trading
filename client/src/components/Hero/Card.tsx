@@ -4,7 +4,7 @@ import Link from "next/link";
 const Card = () => {
   return (
     <div className="flex space-x-4 overflow-x-auto overflow-y-hidden whitespace-nowrap no-scrollbar">
-      <div className=" bg-[#17171a] px-4 py-3 rounded-lg">
+      <div className=" text-slate-800 dark:text-white dark:bg-[#17171a] px-4 py-3 rounded-lg">
         <Link href="">
           <a className="flex items-center -2 w-72 ">
             <div className="w-16 h-16 mr-4 ">
@@ -26,7 +26,7 @@ const Card = () => {
           </a>
         </Link>
       </div>
-      <div className=" bg-[#17171a] px-4 py-3 rounded-lg">
+      <div className=" text-slate-800 dark:text-white dark:bg-[#17171a] px-4 py-3 rounded-lg">
         <a className="flex items-center w-72 ">
           <div className="w-16 h-16 mr-4">
             <Image
@@ -46,7 +46,7 @@ const Card = () => {
           </div>
         </a>
       </div>
-      <div className=" bg-[#17171a] px-4 py-3 rounded-lg">
+      <div className=" text-slate-800 dark:text-white dark:bg-[#17171a] px-4 py-3 rounded-lg">
         <a className="flex items-center -2 w-72 ">
           <div className="w-16 h-16 mr-4 ">
             <Image

@@ -1,8 +1,8 @@
 import { AiOutlineStar } from "react-icons/ai";
 import { BsCurrencyBitcoin } from "react-icons/bs";
-import Pagination from "./pagination";
+import Pagination from "./Pagination";
 
-const Table = () => {
+const Index = () => {
   return (
     <div className="text-slate-900 dark:text-white pt-1">
       <div className="xl:max-w-[1400px] mx-auto  pr-4 lg:pr-0 ">
@@ -114,4 +114,4 @@ const Table = () => {
   );
 };
 
-export default Table;
+export default Index;

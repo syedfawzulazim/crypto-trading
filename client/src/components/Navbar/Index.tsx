@@ -1,7 +1,7 @@
 import Main from "./Main";
 import Secondary from "./Secondary";
 
-const Navbar = () => {
+const Index = () => {
   return (
     <div className="text-black bg-white dark:bg-black dark:text-[#a0a0a0]">
       <div className="w-full mx-auto xl:max-w-[1400px]">
@@ -12,4 +12,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Index;

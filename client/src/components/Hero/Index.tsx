@@ -1,7 +1,7 @@
 import Text from "./Text";
 import Card from "./Card";
 
-const Hero = () => {
+const Index = () => {
   return (
     <div className="dark:bg-[#1f222c] px-4 pb-4 w-full mx-auto xl:max-w-[1400px]">
       <Text />
@@ -10,4 +10,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Index;

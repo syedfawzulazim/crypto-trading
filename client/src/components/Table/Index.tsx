@@ -4,13 +4,15 @@ import Pagination from "./Pagination";
 
 const Index = () => {
   return (
-    <div className="text-slate-900 dark:text-white pt-1">
+    <div className="pt-1 bg-slate-100 dark:bg-[#1f222c] text-slate-900 dark:text-white">
       <div className="xl:max-w-[1400px] mx-auto  pr-4 lg:pr-0 ">
         <div className="w-full overflow-x-auto overflow-y-hidden no-scrollbar whitespace-nowrap lg:pr-0">
           <table className="w-full table-auto ">
             <thead>
-              <tr className="text-xs border-b  dark:border-slate-800 border-slate-400">
-                <th className="sticky left-0 dark:bg-black ">Name</th>
+              <tr className="text-xs border-b dark:border-slate-800 border-slate-400">
+                <th className="sticky left-0 dark:bg-black bg-slate-300 ">
+                  Name
+                </th>
                 <th className="py-2 pl-6 text-right ">Price</th>
                 <th className="py-2 pl-6 text-right">24h %</th>
                 <th className="py-2 pl-6 text-right">7d %</th>
@@ -22,7 +24,7 @@ const Index = () => {
             </thead>
             <tbody className="font-semibold ">
               <tr className="border-b dark:border-slate-800 hover:bg-slate-300">
-                <td className="sticky left-0 px-8 py-1 dark:bg-black">
+                <td className="sticky left-0 px-8 py-1 dark:bg-black bg-slate-200">
                   <div className="flex items-center">
                     <span>
                       <AiOutlineStar />
@@ -50,7 +52,7 @@ const Index = () => {
                 <td className="px-6 text-right">7 days Graph</td>
               </tr>
               <tr className="border-b dark:border-slate-800">
-                <td className="sticky left-0 px-8 py-1 dark:bg-black">
+                <td className="sticky left-0 px-8 py-1 dark:bg-black bg-slate-200">
                   <div className="flex items-center">
                     <span>
                       <AiOutlineStar />
@@ -78,7 +80,7 @@ const Index = () => {
                 <td className="px-6 text-right">7 days Graph</td>
               </tr>
               <tr className="border-b dark:border-slate-800">
-                <td className="sticky left-0 px-8 py-1 dark:bg-black">
+                <td className="sticky left-0 px-8 py-1 dark:bg-black bg-slate-200">
                   <div className="flex items-center">
                     <span>
                       <AiOutlineStar />

@@ -1,5 +1,5 @@
 import { AiOutlineSearch, AiOutlineMenuFold } from "react-icons/ai";
-import Link from "next/link";
+
 import { ThemeToggle } from "../UI";
 
 const Main = () => {
@@ -7,12 +7,10 @@ const Main = () => {
     <nav>
       <div className="flex items-center justify-between p-4 text-xl border-b-0 border-slate-800 ">
         <div>
-          <Link href="/">
-            <a>Logo</a>
-          </Link>
+          <a>Logo</a>
         </div>
 
-        <div className="flex items-center lg:hidden">
+        <div className="flex items-center ">
           <ThemeToggle />
           <div className="mr-3">
             <AiOutlineSearch />
@@ -22,31 +20,21 @@ const Main = () => {
           </div>
         </div>
 
-        <div className="flex space-x-4 text-sm">
+        <div className="hidden space-x-4 text-sm">
           <div className="hover:text-blue-600">
-            <Link href="/">
-              <a>Cryptocurrencies</a>
-            </Link>
+            <a>Cryptocurrencies</a>
           </div>
           <div className="hover:text-blue-600">
-            <Link href="/">
-              <a>Exchanges</a>
-            </Link>
+            <a>Exchanges</a>
           </div>
           <div className="hover:text-blue-600">
-            <Link href="/">
-              <a>NFT</a>
-            </Link>
+            <a>NFT</a>
           </div>
           <div className="hover:text-blue-600">
-            <Link href="/">
-              <a>Portfolio</a>
-            </Link>
+            <a>Portfolio</a>
           </div>
           <div className="hover:text-blue-600">
-            <Link href="/">
-              <a>Watchlist</a>
-            </Link>
+            <a>Watchlist</a>
           </div>
         </div>
 

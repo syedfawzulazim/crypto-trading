@@ -5,15 +5,13 @@ import {
   AiOutlineMenu,
 } from "react-icons/ai";
 import { BiCustomize, BiBarcodeReader } from "react-icons/bi";
+import Link from "next/link";
 
 const Options = () => {
   return (
     <div className="flex justify-between overflow-x-auto overflow-y-hidden no-scrollbar whitespace-nowrap">
       <div className="space-x-2">
-        <a
-          href=""
-          className="dark:bg-[#323546] bg-slate-200 text-black dark:text-white px-2 py-[5px] rounded-md text-xs"
-        >
+        <a className="dark:bg-[#323546] bg-slate-200 text-black dark:text-white px-2 py-[5px] rounded-md text-xs">
           <button>
             <span className="flex items-center font-semibold">
               <AiOutlineStar className="inline mr-1" />
@@ -21,10 +19,8 @@ const Options = () => {
             </span>
           </button>
         </a>
-        <a
-          href=""
-          className="dark:bg-[#323546] bg-slate-200 text-black dark:text-white px-2 py-[5px] rounded-md text-xs "
-        >
+
+        <a className="dark:bg-[#323546] bg-slate-200 text-black dark:text-white px-2 py-[5px] rounded-md text-xs ">
           <button>
             <span className="flex items-center font-semibold">
               <AiFillPieChart className="inline mr-1" />

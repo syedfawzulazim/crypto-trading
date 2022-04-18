@@ -12,19 +12,19 @@ const Footer = () => {
                 <span className="text-lg font-semibold">Products</span>
                 <ul className="pt-4 space-y-2 text-md dark:text-slate-400 text-slate-700">
                   <li>
-                    <a href=""> Blockchain Explorer</a>
+                    <a> Blockchain Explorer</a>
                   </li>
                   <li>
-                    <a href=""> Crypto API</a>
+                    <a> Crypto API</a>
                   </li>
                   <li>
-                    <a href=""> Crypto Indices</a>
+                    <a> Crypto Indices</a>
                   </li>
                   <li>
-                    <a href=""> Jobs Board</a>
+                    <a> Jobs Board</a>
                   </li>
                   <li>
-                    <a href=""> Sitemap</a>
+                    <a> Sitemap</a>
                   </li>
                 </ul>
               </div>
@@ -32,25 +32,25 @@ const Footer = () => {
                 <span className="pt-1 pb-4 text-lg font-semibold">Company</span>
                 <ul className="pt-4 space-y-2 text-md dark:text-slate-400 text-slate-700">
                   <li>
-                    <a href="">About us</a>
+                    <a>About us</a>
                   </li>
                   <li>
-                    <a href=""> Terms of use </a>
+                    <a> Terms of use </a>
                   </li>
                   <li>
-                    <a href=""> Privacy Policy </a>
+                    <a> Privacy Policy </a>
                   </li>
                   <li>
-                    <a href=""> Community Rules </a>
+                    <a> Community Rules </a>
                   </li>
                   <li>
-                    <a href=""> Disclaimer </a>
+                    <a> Disclaimer </a>
                   </li>
                   <li>
-                    <a href=""> Methodology </a>
+                    <a> Methodology </a>
                   </li>
                   <li>
-                    <a href=""> Careers </a>
+                    <a> Careers </a>
                   </li>
                 </ul>
               </div>
@@ -60,16 +60,16 @@ const Footer = () => {
                 <span className="pt-1 pb-4 text-lg font-semibold">Support</span>
                 <ul className="pt-4 space-y-2 text-md dark:text-slate-400 text-slate-700">
                   <li>
-                    <a href="">Request Form</a>
+                    <a>Request Form</a>
                   </li>
                   <li>
-                    <a href=""> Contact Support </a>
+                    <a> Contact Support </a>
                   </li>
                   <li>
-                    <a href=""> FAQ </a>
+                    <a> FAQ </a>
                   </li>
                   <li>
-                    <a href=""> Glossary </a>
+                    <a> Glossary </a>
                   </li>
                 </ul>
               </div>
@@ -77,19 +77,19 @@ const Footer = () => {
                 <span className="pt-1 pb-4 text-lg font-semibold">Socials</span>
                 <ul className="pt-4 space-y-2 text-md dark:text-slate-400 text-slate-700">
                   <li>
-                    <a href="">Facebook</a>
+                    <a>Facebook</a>
                   </li>
                   <li>
-                    <a href=""> Twitter </a>
+                    <a> Twitter </a>
                   </li>
                   <li>
-                    <a href=""> Telegram </a>
+                    <a> Telegram </a>
                   </li>
                   <li>
-                    <a href=""> Instagram </a>
+                    <a> Instagram </a>
                   </li>
                   <li>
-                    <a href=""> Interactive Chatr </a>
+                    <a> Interactive Chatr </a>
                   </li>
                 </ul>
               </div>

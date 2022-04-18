@@ -1,7 +1,7 @@
 const Text = () => {
   return (
     <div>
-      <h1 className="pt-2 pb-1 font-bold text-black dark:text-white sm:text-sm xl:text-2xl">
+      <h1 className="pt-2 pb-1 font-bold text-slate-100 dark:text-white sm:text-sm xl:text-2xl">
         Today's Cryptocurrency Prices by Market Cap
       </h1>
       <div className="pb-2 ">

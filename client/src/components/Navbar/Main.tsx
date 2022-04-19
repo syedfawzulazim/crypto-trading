@@ -1,9 +1,9 @@
-import { AiOutlineSearch, AiOutlineMenuFold } from "react-icons/ai";
+import React from "react";
 
 import { ThemeToggle } from "../UI";
 import Menu from "./Menu";
 
-const Main = () => {
+const Main: React.FC = () => {
   return (
     <nav>
       <div className="flex items-center justify-between p-4 text-xl border-b-0 border-slate-800 ">

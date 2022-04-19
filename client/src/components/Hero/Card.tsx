@@ -1,7 +1,8 @@
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const Card = () => {
+const Card: React.FC = () => {
   return (
     <div className="flex space-x-4 overflow-x-auto overflow-y-hidden whitespace-nowrap no-scrollbar">
       <div className=" text-slate-800 dark:text-white dark:bg-[#17171a] px-4 py-3 rounded-lg">

@@ -2,7 +2,8 @@ import React, { useContext, useState } from "react";
 import { AiOutlineMenuFold, AiOutlineSearch } from "react-icons/ai";
 import { ThemeToggle } from "../UI";
 import { SidebarContext } from "../../context/SidebarContext";
-const Menu = () => {
+
+const Menu: React.FC = () => {
   const { isOpen, toggler } = useContext(SidebarContext);
 
   const toggleSidebar = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Pagination = () => {
+const Pagination: React.FC = () => {
   return (
     <div className="flex items-center justify-center">
       <a

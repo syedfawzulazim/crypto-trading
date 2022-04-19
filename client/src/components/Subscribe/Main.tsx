@@ -1,4 +1,6 @@
-const Main = () => {
+import React from "react";
+
+const Main: React.FC = () => {
   return (
     <div className="md:w-4/12 md:mt-6 md:flex-auto md:p-6">
       <div>

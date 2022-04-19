@@ -1,4 +1,5 @@
-const Text = () => {
+import React from "react";
+const Text: React.FC = () => {
   return (
     <div>
       <h1 className="pt-2 pb-1 font-bold text-slate-100 dark:text-white sm:text-sm xl:text-2xl">

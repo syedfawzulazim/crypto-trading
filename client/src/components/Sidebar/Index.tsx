@@ -1,7 +1,8 @@
 import React from "react";
 import { useContext } from "react";
 import { SidebarContext } from "../../context/SidebarContext";
-const Index = () => {
+
+const Index: React.FC = () => {
   const { isOpen } = useContext(SidebarContext);
 
   const className = isOpen ? "left-0" : "left-[-45vw]";

@@ -4,10 +4,11 @@ import {
   AiFillFilter,
   AiOutlineMenu,
 } from "react-icons/ai";
+import React from "react";
 import { BiCustomize, BiBarcodeReader } from "react-icons/bi";
 import Link from "next/link";
 
-const Options = () => {
+const Options: React.FC = () => {
   return (
     <div className="flex justify-between overflow-x-auto overflow-y-hidden no-scrollbar whitespace-nowrap">
       <div className="space-x-2">

@@ -1,8 +1,9 @@
+import React from "react";
 import { AiOutlineStar } from "react-icons/ai";
 import { BsCurrencyBitcoin } from "react-icons/bs";
 import Pagination from "./Pagination";
 
-const Index = () => {
+const Index: React.FC = () => {
   return (
     <div className="pt-1 bg-slate-100 dark:bg-[#1f222c] text-slate-900 dark:text-white">
       <div className="xl:max-w-[1400px] mx-auto  pr-4 lg:pr-0 ">

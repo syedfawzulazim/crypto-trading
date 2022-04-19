@@ -1,4 +1,6 @@
-const Secondary = () => {
+import React from "react";
+
+const Secondary: React.FC = () => {
   return (
     <div className="relative ">
       <div className="xl:hidden absolute top-0 right-0 w-12 h-full bg-gradient-to-l from-slate-100 ... dark:from-slate-800 ... "></div>

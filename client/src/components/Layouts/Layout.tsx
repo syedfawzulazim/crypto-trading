@@ -2,7 +2,7 @@ import React, { ReactNode, useState } from "react";
 import { Navbar, Footer, Sidebar } from "..";
 import { SidebarContextProvider } from "../../context/index";
 
-const Layout = ({ children }: { children: ReactNode }) => {
+const Layout: React.FC<{ children: ReactNode }> = ({ children }) => {
   return (
     <>
       <SidebarContextProvider>

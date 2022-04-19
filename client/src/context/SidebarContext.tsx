@@ -9,7 +9,9 @@ export const SidebarContext = React.createContext<TSidebarContext>(
   {} as TSidebarContext
 );
 
-const SidebarContextProvider = ({ children }: SidebarProviderProps) => {
+const SidebarContextProvider: React.FC<SidebarProviderProps> = ({
+  children,
+}) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (

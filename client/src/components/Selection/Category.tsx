@@ -1,6 +1,7 @@
+import React from "react";
 import Link from "next/link";
 
-const Category = () => {
+const Category: React.FC = () => {
   return (
     <div className="relative flex items-center py-2 space-x-4 overflow-x-auto overflow-y-hidden text-sm no-scrollbar whitespace-nowrap text-slate-700 dark:text-white">
       <div>

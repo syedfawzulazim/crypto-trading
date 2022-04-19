@@ -3,6 +3,29 @@ import React from "react";
 import { ThemeToggle } from "../UI";
 import Menu from "./Menu";
 
+const NavbarOptions = [
+  {
+    id: "n1",
+    title: "Cryptocurrencies",
+  },
+  {
+    id: "n2",
+    title: "Exchanges",
+  },
+  {
+    id: "n3",
+    title: "NFT",
+  },
+  {
+    id: "n4",
+    title: "Portfolio",
+  },
+  {
+    id: "n5",
+    title: "Watchlist",
+  },
+];
+
 const Main: React.FC = () => {
   return (
     <nav>
@@ -14,21 +37,11 @@ const Main: React.FC = () => {
         <Menu />
 
         <div className="flex space-x-4 text-sm lg-m-w:hidden">
-          <div className="hover:text-blue-600">
-            <a>Cryptocurrencies</a>
-          </div>
-          <div className="hover:text-blue-600">
-            <a>Exchanges</a>
-          </div>
-          <div className="hover:text-blue-600">
-            <a>NFT</a>
-          </div>
-          <div className="hover:text-blue-600">
-            <a>Portfolio</a>
-          </div>
-          <div className="hover:text-blue-600">
-            <a>Watchlist</a>
-          </div>
+          {NavbarOptions.map((item) => (
+            <div className="hover:text-blue-600" key={item.id}>
+              <a>{item.title}</a>
+            </div>
+          ))}
         </div>
 
         <div className="flex items-center space-x-4 lg-m-w:hidden">

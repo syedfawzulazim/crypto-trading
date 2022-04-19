@@ -23,7 +23,7 @@ const Index = () => {
               </tr>
             </thead>
             <tbody className="font-semibold ">
-              <tr className="border-b dark:border-slate-800 hover:bg-slate-300">
+              <tr className="border-b dark:border-slate-800 hover:bg-slate-300 dark:hover:bg-slate-800">
                 <td className="sticky left-0 px-8 py-1 dark:bg-black bg-slate-200">
                   <div className="flex items-center">
                     <span>

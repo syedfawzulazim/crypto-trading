@@ -1,6 +1,7 @@
 import { AiOutlineSearch, AiOutlineMenuFold } from "react-icons/ai";
 
 import { ThemeToggle } from "../UI";
+import Menu from "./Menu";
 
 const Main = () => {
   return (
@@ -10,17 +11,9 @@ const Main = () => {
           <a>Logo</a>
         </div>
 
-        <div className="flex items-center ">
-          <ThemeToggle />
-          <div className="mr-3">
-            <AiOutlineSearch />
-          </div>
-          <div>
-            <AiOutlineMenuFold />
-          </div>
-        </div>
+        <Menu />
 
-        <div className="hidden space-x-4 text-sm">
+        <div className="flex space-x-4 text-sm lg-m-w:hidden">
           <div className="hover:text-blue-600">
             <a>Cryptocurrencies</a>
           </div>
@@ -38,7 +31,8 @@ const Main = () => {
           </div>
         </div>
 
-        <div className="flex space-x-4">
+        <div className="flex items-center space-x-4 lg-m-w:hidden">
+          <ThemeToggle />
           <div>Login</div>
           <div>Signup</div>
         </div>

@@ -1,10 +1,14 @@
-import React, { ReactNode } from "react";
-import { Navbar, Footer } from "..";
+import React, { ReactNode, useState } from "react";
+import { Navbar, Footer, Sidebar } from "..";
+import { SidebarContextProvider } from "../../context/index";
 
 const Layout = ({ children }: { children: ReactNode }) => {
   return (
     <>
-      <Navbar />
+      <SidebarContextProvider>
+        <Navbar />
+        <Sidebar />
+      </SidebarContextProvider>
       <main>{children}</main>
       <Footer />
     </>

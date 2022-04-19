@@ -1,0 +1,11 @@
+.root {
+  backdrop-filter: blur(0.8px);
+}
+
+.modal {
+  @apply bg-white p-12  border-2 relative;
+}
+
+.modal:focus {
+  @apply outline-none;
+}

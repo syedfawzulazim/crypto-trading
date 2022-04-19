@@ -1,16 +1,28 @@
 import React from "react";
 import { useContext } from "react";
 import { SidebarContext } from "../../context/SidebarContext";
+import { AiOutlineClose } from "react-icons/ai";
+import s from "./Sidebar.module.css";
 
 const Index: React.FC = () => {
-  const { isOpen } = useContext(SidebarContext);
+  const { isOpen, toggler } = useContext(SidebarContext);
 
-  const className = isOpen ? "left-0" : "left-[-45vw]";
+  const className = isOpen ? "left-0" : "left-[-100vw]";
+
+  const handleClick = () => {
+    isOpen ? toggler(false) : toggler(true);
+  };
 
   return (
     <div
-      className={`top-0 ${className} lg:hidden transition-all ease-in-out w-[45vw] bg-slate-200 dark:bg-slate-700 p-6 h-screen fixed z-[99]`}
+      className={`top-0 ${className} lg:hidden transition-all ease-in-out w-[100vw] bg-slate-200 dark:bg-slate-700 p-6 h-screen fixed z-[99]`}
     >
+      <div
+        className="flex justify-end p-1 dark:text-white"
+        onClick={handleClick}
+      >
+        <AiOutlineClose />
+      </div>
       <div className="flex flex-col justify-center mt-10 space-y-4 font-semibold text-center">
         <a
           href=""
@@ -18,7 +30,9 @@ const Index: React.FC = () => {
         >
           Home
         </a>
-        <a href="">Trend</a>
+        <a className="" href="">
+          Trend
+        </a>
         <a href="">News</a>
         <a href="">Metaverse</a>
         <a href="">NFT</a>

@@ -7,6 +7,6 @@ const nextConfig = {
 module.exports = {
   nextConfig,
   images: {
-    domains: ["s2.coinmarketcap.com"],
+    domains: ["s2.coinmarketcap.com", "assets.coingecko.com"],
   },
 };

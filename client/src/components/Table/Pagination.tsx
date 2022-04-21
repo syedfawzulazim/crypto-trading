@@ -19,7 +19,7 @@ const Pagination: React.FC = () => {
           </a>
         </li>
 
-        {[1, 2, 3, 4, 5].map((item) => (
+        {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
           <li key={item}>
             <a
               aria-current="page"
@@ -35,7 +35,7 @@ const Pagination: React.FC = () => {
 
         <li>
           <a
-            onClick={() => pageNumber < 5 && setPageNumber(pageNumber + 1)}
+            onClick={() => pageNumber < 8 && setPageNumber(pageNumber + 1)}
             className="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg cursor-pointer hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
           >
             Next

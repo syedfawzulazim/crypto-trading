@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useCallback, useContext, useEffect, useState } from "react";
 import Image from "next/image";
 import { AiOutlineStar } from "react-icons/ai";
 
@@ -15,16 +15,16 @@ const Table: React.FC = () => {
 
   const [data, setData] = useState<IData[]>([]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await axios.get(
-        `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=20&page=${pageNumber}&sparkline=false`
-      );
-      setData(response.data);
-    };
-
-    fetchData();
+  const fetchData = useCallback(async () => {
+    const response = await axios.get(
+      `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=20&page=${pageNumber}&sparkline=false`
+    );
+    setData(response.data);
   }, [pageNumber]);
+
+  useEffect(() => {
+    fetchData();
+  }, [fetchData]);
 
   const modifiedData: IData[] = [];
 
@@ -71,8 +71,8 @@ const Table: React.FC = () => {
             </th>
             <th className="py-2 pl-6 text-right ">Price</th>
             <th className="py-2 pl-6 text-right">24h %</th>
+            <th className="py-2 pl-6 text-right">24hr High</th>
             <th className="py-2 pl-6 text-right">Market Cap</th>
-            <th className="py-2 pl-6 text-right">Volume(24h)</th>
             <th className="py-2 pl-6 text-right">Circulating Supply</th>
             <th className="py-2 pl-6 text-right">ATH</th>
             <th className="px-6 py-2 text-right">ATL</th>
@@ -113,11 +113,21 @@ const Table: React.FC = () => {
               <td className="pl-8 text-right">
                 {coin.price_change_percentage_24h}%
               </td>
-              <td className="pl-8 text-right">{coin.high_24h}</td>
-              <td className="pl-8 text-right">{coin.market_cap}</td>
-              <td className="pl-8 text-right">{coin.total_volume}</td>
-              <td className="pl-8 text-right">{coin.circulating_supply}</td>
-              <td className="px-6 text-right">7 days Graph</td>
+              <td className="pl-8 text-right">
+                <p>${coin.high_24h}</p>
+              </td>
+              <td className="pl-8 text-right">
+                <p>${coin.market_cap}</p>
+              </td>
+              <td className="pl-8 text-right">
+                <p>{coin.circulating_supply}</p>
+              </td>
+              <td className="pl-8 text-right">
+                <p>${coin.ath}</p>
+              </td>
+              <td className="px-6 text-right">
+                <p>${coin.atl}</p>
+              </td>
             </tr>
           ))}
         </tbody>

@@ -30,7 +30,7 @@ const Main: React.FC = () => {
   return (
     <nav>
       <div className="flex items-center justify-between p-4 text-xl border-b-0 border-slate-800 ">
-        <div>
+        <div className="cursor-pointer">
           <a>Logo</a>
         </div>
 
@@ -38,7 +38,7 @@ const Main: React.FC = () => {
 
         <div className="flex space-x-4 text-sm lg-m-w:hidden">
           {NavbarOptions.map((item) => (
-            <div className="hover:text-blue-600" key={item.id}>
+            <div className="cursor-pointer hover:text-blue-600" key={item.id}>
               <a>{item.title}</a>
             </div>
           ))}
@@ -46,8 +46,8 @@ const Main: React.FC = () => {
 
         <div className="flex items-center space-x-4 lg-m-w:hidden">
           <ThemeToggle />
-          <div>Login</div>
-          <div>Signup</div>
+          <div className="cursor-pointer">Login</div>
+          <div className="cursor-pointer">Signup</div>
         </div>
       </div>
     </nav>

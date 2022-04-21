@@ -1,17 +1,11 @@
 import React, { useState } from "react";
-import { TSidebarContext } from "../types";
-
-interface SidebarProviderProps {
-  children: React.ReactNode;
-}
+import { TSidebarContext, IChildren } from "../types";
 
 export const SidebarContext = React.createContext<TSidebarContext>(
   {} as TSidebarContext
 );
 
-const SidebarContextProvider: React.FC<SidebarProviderProps> = ({
-  children,
-}) => {
+const SidebarContextProvider: React.FC<IChildren> = ({ children }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (

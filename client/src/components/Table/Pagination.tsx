@@ -1,66 +1,49 @@
-import React from "react";
+import React, { useContext } from "react";
+import { PaginationContext } from "../../context";
 
 const Pagination: React.FC = () => {
-  return (
-    <div className="flex items-center justify-center">
-      <a
-        href="#"
-        className="flex items-center flex-initial px-4 py-2 text-gray-500 rounded-md"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-6 h-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M11 17l-5-5m0 0l5-5m-5 5h12"
-          />
-        </svg>
-      </a>
+  const { pageNumber, setPageNumber } = useContext(PaginationContext);
 
-      <a
-        href="#"
-        className="px-1 py-2 sm:px-4 sm:py-2 flex-initial text-gray-400  rounded-md hover:bg-[#6188ff] hover:text-white"
-      >
-        1
-      </a>
-      <a
-        href="#"
-        className="px-1 py-2 sm:px-4 sm:py-2 flex-initial text-gray-400  rounded-md hover:bg-[#6188ff] hover:text-white"
-      >
-        2
-      </a>
-      <a
-        href="#"
-        className="px-1 py-2 sm:px-4 sm:py-2 flex-initial text-gray-400  rounded-md hover:bg-[#6188ff] hover:text-white"
-      >
-        3
-      </a>
-      <a
-        href="#"
-        className="px-1 py-2 sm:px-4 sm:py-2 flex-initial text-gray-500  rounded-md hover:bg-[#6188ff] hover:text-white"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-6 h-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M13 7l5 5m0 0l-5 5m5-5H6"
-          />
-        </svg>
-      </a>
-    </div>
+  const classActive = `px-3 py-2 cursor-pointer text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white`;
+  const classNotActive = `px-3 py-2 cursor-pointer leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white`;
+
+  console.log("pagi");
+  return (
+    <nav className="flex items-center justify-center ">
+      <ul className="inline-flex py-2 -space-x-px overflow-x-auto whitespace-nowarp no-scrollbar">
+        <li>
+          <a
+            onClick={() => pageNumber >= 2 && setPageNumber(pageNumber - 1)}
+            className="px-3 py-2 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg cursor-pointer hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+          >
+            Previous
+          </a>
+        </li>
+
+        {[1, 2, 3, 4, 5].map((item) => (
+          <li key={item}>
+            <a
+              aria-current="page"
+              onClick={() => setPageNumber(item)}
+              className={`${
+                pageNumber === item ? classActive : classNotActive
+              }`}
+            >
+              {item}
+            </a>
+          </li>
+        ))}
+
+        <li>
+          <a
+            onClick={() => pageNumber < 5 && setPageNumber(pageNumber + 1)}
+            className="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg cursor-pointer hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+          >
+            Next
+          </a>
+        </li>
+      </ul>
+    </nav>
   );
 };
 

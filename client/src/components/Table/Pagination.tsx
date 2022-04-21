@@ -7,7 +7,6 @@ const Pagination: React.FC = () => {
   const classActive = `px-3 py-2 cursor-pointer text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white`;
   const classNotActive = `px-3 py-2 cursor-pointer leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white`;
 
-  console.log("pagi");
   return (
     <nav className="flex items-center justify-center ">
       <ul className="inline-flex py-2 -space-x-px overflow-x-auto whitespace-nowarp no-scrollbar">

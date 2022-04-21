@@ -2,7 +2,9 @@ export type TSidebarContext = {
   isOpen: boolean;
   toggler: (isOpen: boolean) => void;
 };
-
+export interface IChildren {
+  children: React.ReactNode;
+}
 export interface IData {
   id: string;
   symbol: string;

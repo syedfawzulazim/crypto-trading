@@ -13,6 +13,11 @@ This is a crypto trading app where users can create account, make watchlist, buy
   - NodeJs(Express)
   - MongoDB & Mongoose
   - Typescript
+ 
+3.Containerize & Orchestration & Automation
+   - Docker
+   - Kubernetes
+   - Skaffold
   
 
 ## Project Screen-Shots:

@@ -1,5 +1,4 @@
 import jwt from "jsonwebtoken";
-import { RequestValidationError } from "./../errors/request-validation-error";
 import express, { Request, Response } from "express";
 import { body } from "express-validator";
 import { validationRequest } from "../middlewares/validate-request";

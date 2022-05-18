@@ -6,3 +6,4 @@ export { default as Subscribe } from "./Subscribe/Index";
 export { default as Sidebar } from "./Sidebar/Index";
 export { default as Footer } from "./Footer/Footer";
 export { default as Layout } from "./Layouts/Layout";
+export { default as Login } from "./Login/Login";

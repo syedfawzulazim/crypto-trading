@@ -14,7 +14,7 @@ This is a crypto trading app where users can create account, make watchlist, buy
   - MongoDB & Mongoose
   - Typescript
  
-3.Containerize & Orchestration & Automation
+3.Containerization & Orchestration & Automation
    - Docker
    - Kubernetes
    - Skaffold

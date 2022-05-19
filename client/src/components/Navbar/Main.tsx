@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
+import { Login } from "../index";
 
 import { ThemeToggle } from "../UI";
+import Button from "../UI/Button";
 import Menu from "./Menu";
 
 const NavbarOptions = [
@@ -27,6 +29,16 @@ const NavbarOptions = [
 ];
 
 const Main: React.FC = () => {
+  const [openLoginModal, setOpenLoginModal] = useState(false);
+  const [openSignupModal, setOpenSignupModal] = useState(false);
+
+  const handleClick = () => {
+    setOpenLoginModal(true);
+  };
+  const handleClose = () => {
+    setOpenLoginModal(false);
+  };
+
   return (
     <nav>
       <div className="flex items-center justify-between p-4 text-xl border-b-0 border-slate-800 ">
@@ -46,10 +58,13 @@ const Main: React.FC = () => {
 
         <div className="flex items-center space-x-4 lg-m-w:hidden">
           <ThemeToggle />
-          <div className="cursor-pointer">Login</div>
-          <div className="cursor-pointer">Signup</div>
+          <div className="flex space-x-3 cursor-pointer">
+            <Button label="Login" type="button" handleClick={handleClick} />
+            <Button label="Signup" type="button" handleClick={handleClick} />
+          </div>
         </div>
       </div>
+      {openLoginModal && <Login handleClose={handleClose} />}
     </nav>
   );
 };

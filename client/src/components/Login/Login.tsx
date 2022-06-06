@@ -2,7 +2,7 @@ import React from "react";
 import Modal from "../UI/Modal";
 import { AiOutlineClose } from "react-icons/ai";
 
-//test
+//test 1
 interface LoginProps {
   handleClose: () => void;
 }

@@ -1,8 +1,6 @@
 import React from "react";
 import Modal from "../UI/Modal";
 import { AiOutlineClose } from "react-icons/ai";
-
-
 interface LoginProps {
   handleClose: () => void;
 }

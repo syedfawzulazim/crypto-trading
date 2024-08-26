@@ -90,18 +90,20 @@ const Table: React.FC = () => {
                     <AiOutlineStar />
                   </div>
                   <a href="">
-                    <div className="flex items-center space-x-2">
-                      <Image src={coin.image} width={30} height={30} />
-                      <div className="px-2 lg-m-w:hidden">
-                        <p>{coin.name}</p>
-                        <div className="flex ml-2 space-x-2 text-xs">
-                          <p>{coin.market_cap_rank}</p>
-                          <p>{coin.symbol}</p>
-                        </div>
+                    <div className="flex items-center space-x-6">
+                      <div className="flex m-4">
+                      <p className="text-sm">{coin.market_cap_rank}</p>
                       </div>
+                      <div className="flex">
+                      <Image src={coin.image} width={30} height={30} />
+                      <div className="flex px-2 space-x-4 items-center lg-m-w:hidden">
+                        <p className="text-sm">{coin.name}</p>
+                        <p className="text-xs">{coin.symbol}</p>
+                      </div>
+                      </div>
+                     
                       <div className="px-2 lg:hidden">
                         <div className="flex ml-2 space-x-2 text-xs">
-                          <p>{coin.market_cap_rank}</p>
                           <p>{coin.symbol}</p>
                         </div>
                       </div>

@@ -18,9 +18,9 @@ const Card: React.FC = () => {
             />
           </div>
           <div>
-            <p>Bitcoin 2022</p>
+            <p>Bitcoin 2024</p>
             <p className="whitespace-normal">
-              Live Updates: BTC 2022 in Miami!
+              Live Updates: BTC 2024 in Miami!
             </p>
           </div>
         </a>
@@ -38,9 +38,9 @@ const Card: React.FC = () => {
             />
           </div>
           <div>
-            <p>Bitcoin 2022</p>
+            <p>Bitcoin 2024</p>
             <p className="whitespace-normal">
-              Live Updates: BTC 2022 in Miami!
+              Live Updates: BTC 2024 in Frankfurt!
             </p>
           </div>
         </a>
@@ -58,9 +58,9 @@ const Card: React.FC = () => {
             />
           </div>
           <div>
-            <p>Bitcoin 2022</p>
+            <p>Bitcoin 2024</p>
             <p className="whitespace-normal">
-              Live Updates: BTC 2022 in Miami!
+              Live Updates: BTC 2024 in Berlin!
             </p>
           </div>
         </a>
